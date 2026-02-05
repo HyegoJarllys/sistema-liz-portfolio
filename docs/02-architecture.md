@@ -50,7 +50,7 @@ Conversational API (Stateless)
 
 This flow guarantees that analytics processing never blocks user responses.
 
-*Component Responsibilities*
+**Component Responsibilities**
 1. Conversational API
 
 Role
@@ -115,7 +115,7 @@ Events are published after the user response is returned
 
 Analytics failures do not impact inference availability
 
-*Data Flow Separation*
+**Data Flow Separation**
 
 The system enforces a strict separation between:
 
@@ -125,7 +125,7 @@ Analytics	Asynchronous, failure-tolerant
 
 This separation avoids the common anti-pattern of coupling observability with user experience.
 
-*Scalability Strategy*
+**Scalability Strategy**
 
 Serverless compute for automatic horizontal scaling
 
@@ -135,7 +135,7 @@ Safe minimum capacity to mitigate cold starts
 
 Independent scaling for inference and analytics components
 
-*Reliability & Fault Tolerance*
+**Reliability & Fault Tolerance**
 
 Timeouts and retries applied per dependency
 
@@ -143,7 +143,7 @@ Graceful degradation when retrieval or analytics are unavailable
 
 Clear distinction between user-facing errors and internal failures
 
-*Security Boundaries*
+**Security Boundaries**
 
 IAM-based service-to-service access
 
@@ -153,7 +153,7 @@ Clear trust boundary between public API and internal services
 
 Analytics pipeline isolated from inference path
 
-*Cost Control Considerations*
+**Cost Control Considerations**
 
 Architectural decisions were guided by cost predictability:
 
@@ -174,7 +174,7 @@ Managed AI services	Vendor lock-in       faster delivery
 
 These trade-offs were intentionally chosen based on the target domain.
 
-*What This Document Does Not Cover*
+**What This Document Does Not Cover**
 
 Infrastructure-as-code specifics
 
@@ -186,7 +186,7 @@ Institution-specific configurations
 
 These topics are either proprietary or environment-dependent.
 
-*Related Documentation*
+**Related Documentation**
 
 System overview: docs/00-overview.md
 

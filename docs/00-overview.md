@@ -25,7 +25,7 @@ Every interaction can be analyzed, monitored, and audited.
 Privacy by design
 No personally identifiable information is persisted.
 
-*High-Level Functional Flow*
+**High-Level Functional Flow**
 
 At a conceptual level, the system operates as follows:
 
@@ -45,7 +45,7 @@ This flow ensures predictable behavior, controlled outputs, and non-blocking obs
 
 **Core System Components**
 
-*Conversational API*
+**Conversational API**
 
 Stateless HTTP endpoint
 
@@ -55,7 +55,7 @@ Designed for horizontal scalability
 
 Enforces payload limits and rate control
 
-*Retrieval Layer (RAG)*
+**Retrieval Layer (RAG)**
 
 Managed document index with semantic search
 
@@ -63,7 +63,7 @@ Only approved documents are eligible for retrieval
 
 Retrieval results are explicitly passed to the language model
 
-*Language Model Layer*
+**Language Model Layer**
 
 Generates responses using retrieved context
 
@@ -71,7 +71,7 @@ Configured to avoid speculative or out-of-scope answers
 
 Operates under strict prompt constraints (not exposed publicly)
 
-*Asynchronous Analytics Pipeline*
+**Asynchronous Analytics Pipeline**
 
 Interaction events are published after response delivery
 
@@ -81,7 +81,7 @@ Enables usage tracking, quality monitoring, and cost attribution
 
 **Non-Functional Characteristics**
 
-*Scalability*
+**Scalability**
 
 Fully serverless design
 
@@ -89,7 +89,7 @@ Automatic horizontal scaling
 
 Safe minimum capacity for predictable cold-start behavior
 
-*Reliability*
+**Reliability**
 
 Graceful degradation on dependency failures
 
@@ -97,7 +97,7 @@ Clear error contracts for client applications
 
 Retry and timeout strategies applied per component
 
-*Security*
+**Security**
 
 IAM-based access control
 
@@ -105,7 +105,7 @@ No secrets embedded in source code
 
 Clear boundary between public API and internal services
 
-*Intended Use Cases*
+**Intended Use Cases**
 
 Citizen support and information services
 
@@ -117,7 +117,7 @@ Operational dashboards driven by conversational usage
 
 The system is not designed for open-ended chat or creative generation.
 
-*Known Constraints*
+**Known Constraints**
 
 Responses are limited to the scope of indexed documents
 

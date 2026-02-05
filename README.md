@@ -1,4 +1,4 @@
-**Sistema LIZ — Intelligent Public Service Assistant (RAG + Analytics)**
+***Sistema LIZ — Intelligent Public Service Assistant (RAG + Analytics)***
 
 AI-powered assistant for public service operations, designed to deliver accurate, contextual, and auditable responses using Retrieval-Augmented Generation (RAG), with a strong focus on security, scalability, observability, and data-driven governance.
 
@@ -27,7 +27,7 @@ Scalable, low-latency architectures
 
 Sistema LIZ was built to address these constraints using cloud-native, serverless, and AI-first design principles.
 
-*🧠 Core Capabilities*
+**🧠 Core Capabilities**
 
 Retrieval-Augmented Generation (RAG) using managed vector search
 
@@ -41,7 +41,7 @@ Privacy-first design (no PII storage)
 
 Production-ready architecture (IAM, quotas, retries, fallbacks)
 
-***High-Level Architecture***
+**High-Level Architecture**
 
 Request flow (simplified):
 
@@ -92,7 +92,7 @@ Example response:
 
  Full demo examples are available in docs/01-quickstart.md
 
-*📊 Analytics & Observability*
+**📊 Analytics & Observability**
 
 The system includes a non-blocking analytics pipeline that enables:
 
@@ -173,7 +173,7 @@ Operational maturity
 The public version serves as a technical portfolio for roles involving:
 AI Engineering · Data Engineering · Cloud Architecture · MLOps · Applied LLM Systems
 
-📬 Contact
+*📬 Contact*
 
 If you are a recruiter, engineer, or technical leader and would like to discuss:
 

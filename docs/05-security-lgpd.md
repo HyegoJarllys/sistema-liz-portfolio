@@ -4,7 +4,7 @@ Sistema LIZ was designed for environments where data protection, access control,
 
 Security and privacy are treated as foundational architectural concerns, not as optional features layered on top of the system.
 
-*Core Security Principles*
+**Core Security Principles**
 
 The system follows these guiding principles:
 
@@ -20,7 +20,7 @@ Multiple layers of control exist to reduce blast radius in case of failure.
 No implicit trust
 All service-to-service communication is authenticated and authorized.
 
-*Data Privacy by Design*
+**Data Privacy by Design**
 Data Minimization
 
 The system intentionally limits data collection to what is strictly necessary:
@@ -45,7 +45,7 @@ Service improvement
 
 Analytics data is not repurposed for user profiling or behavioral tracking.
 
-*User Identification Strategy*
+**User Identification Strategy**
 Aspect	                 Approach
 User ID	                 Client-provided, anonymous or hashed
 PII Storage	             Not allowed
@@ -54,7 +54,7 @@ Analytics Linking   	Aggregated, non-identifiable
 
 Clients are explicitly responsible for ensuring that user_id values do not contain personal data.
 
-*LGPD Alignment*
+**LGPD Alignment**
 
 Sistema LIZ aligns with the following LGPD principles:
 
@@ -68,7 +68,7 @@ Security: Technical and organizational safeguards are applied
 
 Prevention: Architecture reduces the likelihood of data misuse
 
-*Access Control & IAM*
+**Access Control & IAM**
 
 IAM roles are scoped per service
 
@@ -80,7 +80,7 @@ Analytics access is restricted to authorized roles
 
 This reduces lateral movement risk and simplifies auditing.
 
-*Network & Infrastructure Security*
+**Network & Infrastructure Security**
 
 Public access is limited to the API gateway or entry service
 
@@ -90,7 +90,7 @@ No direct external access to analytics or storage layers
 
 Infrastructure details are environment-specific and intentionally abstracted.
 
-*Logging & Auditability*
+**Logging & Auditability**
 
 Logs are structured and scoped per component
 
@@ -100,7 +100,7 @@ Security-relevant events are traceable
 
 Audit trails support incident investigation without exposing user data
 
-*Failure & Incident Considerations*
+**Failure & Incident Considerations**
 
 The system is designed to fail safely:
 
@@ -110,7 +110,7 @@ Analytics outages do not affect inference availability
 
 Errors returned to clients are sanitized and non-informative
 
-*What Is Explicitly Out of Scope*
+**What Is Explicitly Out of Scope**
 
 This public documentation does not include:
 
@@ -124,7 +124,7 @@ Security incident response playbooks
 
 These elements are environment-specific and restricted by design.
 
-*Why This Matters in Regulated Environments*
+**Why This Matters in Regulated Environments**
 
 By embedding privacy and security at the architectural level, Sistema LIZ:
 
@@ -136,7 +136,7 @@ Increases institutional trust
 
 Enables safe scaling across departments or clients
 
-*Related Documentation*
+**Related Documentation**
 
 Analytics & governance: docs/04-analytics.md
 

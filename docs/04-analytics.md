@@ -30,7 +30,7 @@ No personal or identifiable user data is stored.
 Operational usefulness
 Metrics are collected with clear questions in mind, not “just in case”.
 
-*Analytics Flow (Conceptual)*
+**Analytics Flow (Conceptual)**
 
 The user request is processed and a response is returned.
 
@@ -42,7 +42,7 @@ Aggregated data is stored for reporting and dashboards.
 
 Failures in this flow do not affect the conversational API.
 
-*Event Model (Abstracted)*
+**Event Model (Abstracted)**
 
 Each interaction generates a single analytics event containing:
 
@@ -57,7 +57,7 @@ user_id	Anonymous or hashed identifier
 
 Exact schemas and field names are environment-specific and intentionally omitted.
 
-*Key Metrics Collected*
+**Key Metrics Collected**
 Usage Metrics
 
 Total requests per period
@@ -90,7 +90,7 @@ Cost distribution by usage pattern
 
 High-cost outlier detection
 
-*Dashboards & Reporting*
+**Dashboards & Reporting**
 
 Analytics data enables dashboards for different stakeholders:
 
@@ -112,7 +112,7 @@ Topic frequency and demand patterns
 
 These dashboards support data-driven decisions, not manual inspection.
 
-*Privacy & Compliance Considerations*
+**Privacy & Compliance Considerations**
 
 No raw user messages are persisted
 
@@ -124,7 +124,7 @@ Data access is restricted by role and purpose
 
 This design aligns with data minimization and purpose limitation principles.
 
-*Failure Handling*
+**Failure Handling**
 
 The analytics pipeline is designed to be failure-tolerant:
 
@@ -134,7 +134,7 @@ Temporary analytics outages do not degrade user experience
 
 Backpressure is handled through asynchronous buffering
 
-*Why This Matters*
+**Why This Matters**
 
 By decoupling analytics from inference, the system achieves:
 
@@ -146,7 +146,7 @@ Clear operational insight without architectural risk
 
 This approach avoids a common anti-pattern where monitoring becomes a source of instability.
 
-*Related Documentation*
+**Related Documentation**
 
 API Contract: docs/03-api.md
 

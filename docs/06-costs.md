@@ -1,4 +1,4 @@
-**Cost & Financial Design Overview**
+***Cost & Financial Design Overview***
 
 Sistema LIZ was designed with cost predictability and transparency as core architectural requirements.
 
@@ -6,7 +6,7 @@ All technical decisions — from serverless infrastructure to asynchronous proce
 
 This document presents a sanitized cost model, suitable for technical evaluation and portfolio review.
 
-*Cost Modeling Assumptions*
+**Cost Modeling Assumptions**
 
 The baseline cost model assumes:
 
@@ -22,7 +22,7 @@ Regional cloud deployment optimized for cost
 
 The model is based on real cloud pricing and conservative buffers.
 
-*High-Level Monthly Cost Breakdown*
+**High-Level Monthly Cost Breakdown**
 
 Cost Category	                      Description	                                 Relative Share
 AI & ML Services         Language model inference and semantic retrieval	            High
@@ -34,7 +34,7 @@ Networking	                Egress and API traffic	                              
 
 AI services are the primary cost driver, as expected in RAG-based systems.
 
-*Unit Cost per Interaction*
+**Unit Cost per Interaction**
 
 One of the main design goals was to keep the cost per interaction low and predictable.
 
@@ -46,7 +46,7 @@ No cost incurred during idle periods
 
 This makes the system economically viable even at low adoption levels.
 
-*Cost Optimization Strategies*
+**Cost Optimization Strategies**
 
 Several architectural strategies were applied to control costs:
 
@@ -76,7 +76,7 @@ Conservative buffers applied to absorb traffic spikes
 
 Prevents unexpected billing anomalies
 
-*Cost Predictability & Governance*
+**Cost Predictability & Governance**
 
 The system supports:
 
@@ -90,7 +90,7 @@ Clear separation between operational and analytical costs
 
 These capabilities are essential for public-sector and institutional environments.
 
-*Scaling Economics*
+**Scaling Economics**
 
 As usage grows:
 
@@ -102,7 +102,7 @@ No step-function increases in operational expense
 
 This enables safe expansion without architectural redesign.
 
-*What Is Intentionally Excluded*
+**What Is Intentionally Excluded**
 
 To protect commercial strategy and client confidentiality, this public documentation does not include:
 
@@ -118,7 +118,7 @@ Deployment or onboarding costs
 
 These elements are discussed privately when required.
 
-*Why This Matters*
+**Why This Matters**
 
 Clear cost modeling demonstrates:
 
@@ -132,7 +132,7 @@ Alignment with budget-constrained organizations
 
 This is a critical signal of seniority and real-world experience.
 
-*Related Documentation*
+**Related Documentation**
 
 Architecture decisions: docs/02-architecture.md
 

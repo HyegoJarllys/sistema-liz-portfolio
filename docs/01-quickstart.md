@@ -5,7 +5,7 @@ This quickstart provides a sanitized and non-production demonstration of how the
 The examples below are illustrative and do not connect to a live environment.
 They exist solely to demonstrate the API contract, request flow, and response structure.
 
-*Prerequisites*
+**Prerequisites**
 
 No cloud account or credentials are required.
 
@@ -15,28 +15,28 @@ Basic familiarity with HTTP APIs
 
 Any HTTP client (cURL, Postman, or similar)
 
-*API Endpoint (Placeholder)*
+**API Endpoint (Placeholder)**
 
 POST https://<backend-host>/chat
 
 The actual production endpoint is intentionally omitted.
 
-*Request Format*
+**Request Format**
 
 Headers
 Content-Type: application/json
 
-*Body Parameters*
+***Body Parameters**
 Field	    Type	    Required	    Description
 message	    string	    Yes	        User question or request
 user_id	    string	    Yes	        Anonymous or hashed identifier
 
-*Example Request*
+**Example Request**
 {
   "message": "How can I submit a formal service request?",
   "user_id": "anonymous_user_001"
 }
-*Response Format*
+**Response Format**
 
 Success Response (200)
 {
@@ -46,7 +46,7 @@ Success Response (200)
   ]
 }
 
-*Response Fields*
+**Response Fields**
 Field	        Type	                  Description
 response	    string	            Generated answer grounded in documents
 sources	        array of string	    Documents used to generate the response
@@ -55,19 +55,19 @@ sources	        array of string	    Documents used to generate the response
 
 The API follows standard HTTP semantics.
 
-*Common Error Codes*
+**Common Error Codes**
 Status	    Meaning 	    Description
 400	    Bad Request	        Invalid or missing fields
 429	    Too Many Requests	Rate limit exceeded
 500	    Internal Error  	Unexpected server error
 503	    Service Unavailable	Temporary dependency failure
 
-*Example Error Response*
+**Example Error Response**
 {
   "error": "Service temporarily unavailable. Please retry later."
 }
 
-*Analytics Behavior (Implicit)*
+**Analytics Behavior (Implicit)**
 
 From the client’s perspective, analytics are invisible.
 
