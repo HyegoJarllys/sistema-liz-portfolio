@@ -1,4 +1,4 @@
-Sistema LIZ — Intelligent Public Service Assistant (RAG + Analytics)
+**Sistema LIZ — Intelligent Public Service Assistant (RAG + Analytics)**
 
 AI-powered assistant for public service operations, designed to deliver accurate, contextual, and auditable responses using Retrieval-Augmented Generation (RAG), with a strong focus on security, scalability, observability, and data-driven governance.
 
