@@ -1,0 +1,71 @@
+***LICENSE***
+
+Copyright (c) 2026 Hyego Maia
+All rights reserved.
+
+Portfolio & Evaluation License (Non-Commercial)
+
+This repository and its contents are provided exclusively for portfolio presentation, technical evaluation, and educational review.
+
+ **Permitted Uses**
+
+You are allowed to:
+
+View, read, and analyze the contents of this repository
+
+Evaluate the architecture, documentation, and design decisions
+
+Reference high-level concepts for learning purposes
+
+Discuss the project in interviews, reviews, or technical assessments
+
+ **Prohibited Uses**
+
+You are not allowed to:
+
+Use this project, in whole or in part, in production environments
+
+Deploy, sell, sublicense, or redistribute this software or documentation
+
+Use the code, architecture, or documentation for commercial purposes
+
+Derive competing products or services from this work
+
+Copy proprietary logic, prompts, or system designs for operational use
+
+ **Intellectual Property**
+
+All intellectual property rights, including but not limited to:
+
+System design
+
+Architectural decisions
+
+Documentation
+
+Naming
+
+Concepts and workflows
+
+remain the exclusive property of the author.
+
+This repository does not grant any patent, trademark, or commercial rights.
+
+ **Disclaimer**
+
+This project is provided “as is”, without warranty of any kind, express or implied, including but not limited to:
+
+Fitness for a particular purpose
+
+Merchantability
+
+Non-infringement
+
+The author is not liable for any damages arising from the use or misuse of this material.
+
+📩 Commercial or Extended Use
+
+For commercial licensing, private demonstrations, or extended usage rights,
+please contact the author directly.
+
+End of License
