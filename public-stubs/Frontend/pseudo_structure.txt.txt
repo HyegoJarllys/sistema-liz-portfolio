@@ -1,0 +1,35 @@
+frontend/
+  src/
+    app/
+      ui.py (or App.tsx)
+        - main UI layout
+        - input box, submit action
+        - response rendering
+
+    api/
+      client.py (or api.ts)
+        - backend base URL (placeholder)
+        - POST /chat wrapper
+        - timeout + retry policy (lightweight)
+
+    state/
+      session.py
+        - anonymous user_id generation (UUID)
+        - local persistence (cookie/localstorage/session)
+
+    components/
+      ChatBox
+      MessageList
+      StatusBanner
+      SourcesPanel (optional)
+
+    config/
+      settings.example
+        - placeholder env keys (no secrets)
+        - baseUrl defaults to <backend-host>
+
+  public/
+    index.html
+
+  Dockerfile (optional)
+  requirements.txt / package.json

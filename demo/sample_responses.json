@@ -1,0 +1,49 @@
+{
+  "examples": [
+    {
+      "request_id": "alvara_funcionamento",
+      "response": "Para solicitar o alvará de funcionamento, o cidadão ou responsável legal deve protocolar o pedido junto à Prefeitura Municipal de São Fernando, apresentando os documentos exigidos para a atividade exercida. Em geral, são solicitados documentos pessoais, comprovante de endereço, CNPJ (quando aplicável) e informações sobre o local de funcionamento. A análise é realizada pelos setores competentes antes da liberação do alvará.",
+      "sources": [
+        "Guia do Cidadão – Serviços Municipais de São Fernando",
+        "Código de Posturas Municipais – São Fernando"
+      ]
+    },
+    {
+      "request_id": "prazo_acompanhamento_alvara",
+      "response": "Os prazos para análise de pedidos de alvará podem variar de acordo com a complexidade da atividade e a documentação apresentada. Após o protocolo, o andamento do pedido pode ser acompanhado diretamente junto à Prefeitura ou pelo canal oficial de atendimento ao cidadão, quando disponível.",
+      "sources": [
+        "Guia do Cidadão – Serviços Municipais de São Fernando",
+        "Secretaria Municipal de Administração – São Fernando"
+      ]
+    },
+    {
+      "request_id": "iluminacao_publica_reclamacao",
+      "response": "Problemas relacionados à iluminação pública podem ser registrados por meio da Ouvidoria Municipal ou diretamente junto à Secretaria responsável pela manutenção urbana. Após o registro, a solicitação é encaminhada para avaliação técnica e inclusão na programação de manutenção, conforme a urgência e a disponibilidade operacional.",
+      "sources": [
+        "Ouvidoria Municipal – Prefeitura de São Fernando",
+        "Plano Municipal de Manutenção Urbana – São Fernando"
+      ]
+    },
+    {
+      "request_id": "programas_assistencia_social",
+      "response": "Os programas de assistência social do município possuem critérios específicos de elegibilidade, definidos pela legislação vigente e pelas diretrizes da Secretaria Municipal de Assistência Social. Para se candidatar, o interessado deve procurar o setor responsável ou o CRAS, onde receberá orientações sobre cadastro, documentação e acompanhamento.",
+      "sources": [
+        "Secretaria Municipal de Assistência Social – São Fernando",
+        "Política Municipal de Assistência Social – São Fernando"
+      ]
+    },
+    {
+      "request_id": "tributos_municipais",
+      "response": "As informações oficiais sobre tributos municipais, como IPTU, taxas e formas de pagamento, estão disponíveis nos canais institucionais da Prefeitura de São Fernando. Em caso de dúvidas, o contribuinte pode buscar atendimento presencial ou pelos meios oficiais de contato para esclarecimentos adicionais.",
+      "sources": [
+        "Código Tributário Municipal – São Fernando",
+        "Secretaria Municipal de Finanças – São Fernando"
+      ]
+    },
+    {
+      "request_id": "resposta_fora_escopo",
+      "response": "No momento, não foram encontrados documentos oficiais da Prefeitura de São Fernando que tratem especificamente desse tema. Para obter informações mais detalhadas, recomenda-se entrar em contato diretamente com o setor responsável ou consultar os canais institucionais do município.",
+      "sources": []
+    }
+  ]
+}

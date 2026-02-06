@@ -1,0 +1,73 @@
+backend/
+  app/
+    server.py
+      - HTTP entrypoint (FastAPI)
+      - routes: POST /chat, GET /health (optional)
+      - request validation, error mapping, rate controls
+
+    core/
+      config.py
+        - env config loading (no secrets in repo)
+        - feature flags (analytics on/off)
+
+      schemas.py
+        - request/response models (pydantic)
+        - public contract consistency
+
+      orchestrator.py
+        - high-level flow:
+          1) validate request
+          2) retrieve docs
+          3) build grounded prompt
+          4) call LLM
+          5) return response
+          6) emit analytics (async, best-effort)
+
+    rag/
+      retrieval_client.py
+        - managed search client (Vertex AI Search)
+        - Top-K retrieval, filters, timeouts
+
+      grounding.py
+        - context assembly (doc snippets)
+        - source formatting
+        - safety constraints (sanitized in public repo)
+
+    llm/
+      model_client.py
+        - LLM call wrapper (Gemini)
+        - retry/backoff strategy
+        - token budget controls
+
+      prompt_builder.py
+        - prompt templates (private in real repo)
+        - public repo contains only conceptual description
+
+    analytics/
+      event_emitter.py
+        - publish event to Pub/Sub (after response)
+        - best-effort emission (no user impact)
+
+      event_schema.py
+        - sanitized event schema (no PII)
+        - cost attribution fields (optional)
+
+    ops/
+      logging.py
+        - structured logs, correlation IDs
+        - payload sanitization
+
+      errors.py
+        - exception mapping to HTTP status codes
+        - client-safe error messages
+
+      health.py
+        - dependency checks (optional)
+
+  tests/
+    test_api_contract.py
+    test_retrieval_stub.py
+    test_event_emission_stub.py
+
+  Dockerfile
+  requirements.txt

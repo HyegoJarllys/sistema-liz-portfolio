@@ -1,0 +1,99 @@
+### Sistema LIZ — Demo Requests (Institutional Examples)
+### Usage:
+### - Replace <backend-host> with your deployed URL (or keep as placeholder for portfolio)
+### - Use either EN contract (message/response) or PT contract (mensagem/resposta) depending on deployment
+### - user_id should be anonymous or hashed (no PII)
+
+@baseUrl = https://<backend-host>
+@userId = anonymous_user_001
+
+############################################
+### 1) EN — Basic citizen question (procedures)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "How do I request a building permit (alvará) and what documents are required?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 2) EN — Follow-up question (context continuation handled by client)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "What are the usual processing times and where can I track the request status?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 3) EN — Citizen complaint / ouvidoria-style input (should remain grounded and respectful)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "Street lighting has been out for two weeks on my street. How can I report this and what is the expected resolution time?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 4) EN — Eligibility / requirements (social programs)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "What are the eligibility requirements for municipal assistance programs and how can I apply?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 5) EN — Transparency / institutional information request (audit-friendly)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "Where can I find official information about municipal taxes and payment methods?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 6) PT-BR — Variante (caso sua API esteja em português: mensagem/resposta)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "mensagem": "Como solicitar um alvará de funcionamento e quais documentos são necessários?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 7) PT-BR — Reclamação (ouvidoria)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "mensagem": "A iluminação pública da minha rua está apagada há duas semanas. Como registrar a solicitação e qual o prazo médio de atendimento?",
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 8) PT-BR — Teste de validação (erro esperado: payload inválido)
+### Expect: 400 Bad Request
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "user_id": "{{userId}}"
+}
+
+############################################
+### 9) PT-BR — Teste de limite (texto muito grande) — opcional
+### Purpose: validate payload limits (should return 400 or 413 depending on implementation)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "mensagem": "REPLACE_WITH_LONG_TEXT_....",
+  "user_id": "{{userId}}"
+}
